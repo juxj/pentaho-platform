@@ -175,7 +175,7 @@ public class ConnectionIT extends BaseTest {
         PentahoConnectionFactory
             .getConnection(
               IPentahoConnection.MDX_DATASOURCE,
-              "jdbc:hsqldb:hsql://localhost:9001/sampledata; Catalog=" + file.toURI().toString(), "mondrian", "sa", "",
+              "jdbc:hsqldb:hsql://localhost:19001/sampledata; Catalog=" + file.toURI().toString(), "mondrian", "sa", "",
               session, this ); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
 
     try {
@@ -220,7 +220,7 @@ public class ConnectionIT extends BaseTest {
         PentahoConnectionFactory
             .getConnection(
               IPentahoConnection.MDX_DATASOURCE,
-              "jdbc:hsqldb:hsql://localhost:9001/sampledata; Catalog=" + file.toURI().toString(), "mondrian", "sa", "",
+              "jdbc:hsqldb:hsql://localhost:19001/sampledata; Catalog=" + file.toURI().toString(), "mondrian", "sa", "",
               session, null ); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
     String query =
         "select {[Measures].[Actual], [Measures].[Budget]} on rows, {[Region].[All Regions]} ON columns from [Quadrant Analysis] WHERE ([Positions].[All Positions])"; //$NON-NLS-1$
@@ -277,7 +277,7 @@ public class ConnectionIT extends BaseTest {
     catalog = "solution:/test/datasources/SampleData.mondrian.xml;vfs=true"; //$NON-NLS-1$
     IPentahoConnection connection =
         PentahoConnectionFactory.getConnection( IPentahoConnection.MDX_DATASOURCE,
-            "jdbc:hsqldb:hsql://localhost:9001/sampledata; Catalog=" + catalog, "mondrian", "sa", "", session, null ); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
+            "jdbc:hsqldb:hsql://localhost:19001/sampledata; Catalog=" + catalog, "mondrian", "sa", "", session, null ); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
     String query =
         "select {[Measures].[Actual], [Measures].[Budget]} on rows, {[Region].[All Regions]} ON columns from [Quadrant Analysis] WHERE ([Positions].[All Positions])"; //$NON-NLS-1$
 

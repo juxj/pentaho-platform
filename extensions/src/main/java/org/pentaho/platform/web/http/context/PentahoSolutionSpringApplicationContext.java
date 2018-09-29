@@ -80,6 +80,7 @@ public class PentahoSolutionSpringApplicationContext extends XmlWebApplicationCo
   protected Resource getResourceByPath( String path ) {
     Resource resource = null;
     String solutionPath = PentahoHttpSessionHelper.getSolutionPath( getServletContext() );
+    //String solutionPath = "/Users/tju/Workspace/Pentaho/pentaho-server/pentaho-solutions";
     if ( solutionPath != null ) {
       File file = new File( solutionPath + File.separator + SYSTEM_FOLDER + File.separator + path ); //$NON-NLS-1$
       resource = new FileSystemResource( file );

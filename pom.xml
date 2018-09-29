@@ -110,7 +110,7 @@
     <commons-io.version>2.1</commons-io.version>
     <commons-jxpath.version>1.2</commons-jxpath.version>
     <maven-surefire-plugin.reuseForks>false</maven-surefire-plugin.reuseForks>
-    <mysql-connector-java.version>5.1.17</mysql-connector-java.version>
+    <mysql-connector-java.version>5.1.45</mysql-connector-java.version>
     <sapdbc.version>7.4.4</sapdbc.version>
     <jcr.version>2.0</jcr.version>
     <aspectjrt.version>1.6.6</aspectjrt.version>
@@ -231,7 +231,7 @@
     <jstl.version>1.2</jstl.version>
     <jsch.version>0.1.54</jsch.version>
     <jcommon-logging-log4jlog.version>1.0.2</jcommon-logging-log4jlog.version>
-    <h2.version>1.2.131</h2.version>
+    <h2.version>1.4.197</h2.version>
     <commons-cli.version>1.2</commons-cli.version>
     <license-maven-plugin.version>3.0</license-maven-plugin.version>
     <commons-discovery.version>0.4</commons-discovery.version>
