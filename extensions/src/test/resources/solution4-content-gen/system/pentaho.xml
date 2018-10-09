@@ -170,7 +170,7 @@
 	  <wait>100</wait>
   </dbcp-defaults>
   <hibernate>
-	  <hibernateConfigPath>system/hibernate/hsql.hibernate.cfg.xml</hibernateConfigPath>
+	  <hibernateConfigPath>system/hibernate/mysql5.hibernate.cfg.xml</hibernateConfigPath>
 	  <!--
 	  *
 	  * hibernateManaged should be set to true if running the BI Platform
