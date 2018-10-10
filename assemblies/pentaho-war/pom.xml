@@ -12,7 +12,8 @@
   <packaging>war</packaging>
   <properties>
     <snakeyaml.version>1.13</snakeyaml.version>
-    <rdbms>hsqldb</rdbms>
+    <!--<rdbms>hsqldb</rdbms>-->
+    <rdbms>mysql5</rdbms>
     <commons-database.version>8.1.0.0-SNAPSHOT</commons-database.version>
     <prepared.war.directory>${pentaho-server.directory}/tomcat/webapps/pentaho</prepared.war.directory>
     <pentaho-hadoop-shims-api.version>8.1.0.0-SNAPSHOT</pentaho-hadoop-shims-api.version>
